@@ -16,7 +16,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
-import { NgIf } from '@angular/common';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -26,7 +26,8 @@ import { NgIf } from '@angular/common';
         ProgressComponent,
         Graficas1Component,
         GraficoDonaComponent,
-        IncrementadorComponent
+        IncrementadorComponent,
+        AccountSettingsComponent
     ],
     exports: [
         PagesComponent,
