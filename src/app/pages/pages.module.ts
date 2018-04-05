@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 // Modulos
@@ -8,6 +9,10 @@ import { ChartsModule } from 'ng2-charts';
 
 // Rutas
 import { PAGES_ROUTES } from '../pages/pages.routes';
+
+// Pipes
+import { PipesModule } from '../pipes/pipes.module';
+
 
 // Componentes
 import { PagesComponent } from './pages.component';
@@ -19,6 +24,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { ProfileComponent } from './profile/profile.component';
+
 
 
 @NgModule({
@@ -31,7 +38,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         IncrementadorComponent,
         AccountSettingsComponent,
         PromesasComponent,
-        RxjsComponent
+        RxjsComponent,
+        ProfileComponent
     ],
     exports: [
         PagesComponent,
@@ -40,10 +48,12 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         Graficas1Component
     ],
     imports: [
+        CommonModule,
         SharedModule,
         PAGES_ROUTES,
         FormsModule,
-        ChartsModule
+        ChartsModule,
+        PipesModule
     ]
 })
 
