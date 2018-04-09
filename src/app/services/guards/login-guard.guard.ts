@@ -14,7 +14,6 @@ constructor(public router: Router,
   canActivate() {
 
     if (this.usuarioService.estaLogueado()) {
-      console.log('Paso por el login Guard');
       return true;
     } else {
       console.log('Bloqueado por el login Guard');
